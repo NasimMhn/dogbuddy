@@ -15,36 +15,56 @@
     <header>
 
         <video id="tindog_video" autoplay muted loop>
-          <source src="videos/tindog_1280.m4v" type="video/mp4">
-          <source src="videos/tindog_1280.webm" type="video/webm">
-          <source src="videos/tindog_720.m4v" type="video/mp4">
-          <source src="videos/tindog_720.webm" type="video/webm">
-          <source src="videos/tindog_360.m4v" type="video/mp4">
-          <source src="videos/tindog_360.webm" type="video/webm">
+          <source src="videos/dogbuddy_1280.m4v" type="video/mp4">
+          <source src="videos/dogbuddy_1280.webm" type="video/webm">
+          <source src="videos/dogbuddy_720.m4v" type="video/mp4">
+          <source src="videos/dogbuddy_720.webm" type="video/webm">
+          <source src="videos/dogbuddy_360.m4v" type="video/mp4">
+          <source src="videos/dogbuddy_360.webm" type="video/webm">
           <p>This browser doesn't support video...</p>
         </video>
 
         <div class="content">
           <h1> Dogbuddy</h1>
-          <h3> - Meet new and interesting dogs nearby </p>
+          <h3> - Let your dog meet new and interesting dogs nearby </p>
         </div>
     </header>
 
-    <!-- Signup form -->
     <container>
-      <section class="signup">
-        <div>
+      <!-- Signup section -->
+      <section class="signup-section">
+        <div class="signup-div">
           <h2>Sign up</h2>
-        </div>
-        
+       
+          <form action="http://httpbin.org/anything" method="POST">
+           
+            <input type="text" name="firstname"  placeholder="First name" required>
+            <input type="text" name="lastname" placeholder="Last name" required>
+            <input type="email" name="email"  placeholder="E-mail" required> 
 
+            
+            
+            <div>
+              <p> My dog is interested in meeting:</p>
+              <input type="radio" name="gender" value="male" checked> <text> Male </text>
+              <input type="radio" name="gender" value="female"> <text> Female </text>
+              <input type="radio" name="gender" value="both"> <text> Both </text>
+            </div>
+
+            <div>
+              <input type="checkbox" name="tac" value="checkbox" required> I agree to the Terms & Conditions
+            </div>
+            <input type="submit" value="Register">
+
+          </form>
+        </div>
       </section>
 
 
-
-      <section class="accordion">
-        <!-- Accordion -->
-        <div>
+       <!-- Accordion section -->
+      <section class="accordion-section">
+       
+        <div class="signup-div">
           <h2>FAQ</h2>
 
           <div class="question" id="section1">Section 1</div>
