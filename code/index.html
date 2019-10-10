@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 
   </head>
+
   <body>
     <header>
 
@@ -25,9 +26,10 @@
         </video>
 
         <div class="content">
-          <h1> Dogbuddy</h1>
-          <h3> - Let your dog meet new and interesting dogs nearby </p>
+          <h1> DogBuddy</h1>
+          <h3> - Let your dog meet new and interesting dogs nearby- </p>
         </div>
+
     </header>
 
     <container>
@@ -41,8 +43,6 @@
             <input type="text" name="firstname"  placeholder="First name" required>
             <input type="text" name="lastname" placeholder="Last name" required>
             <input type="email" name="email"  placeholder="E-mail" required> 
-
-            
             
             <div>
               <p> My dog is interested in meeting:</p>
@@ -67,15 +67,21 @@
         <div class="signup-div">
           <h2>FAQ</h2>
 
-          <div class="question" id="section1">Section 1</div>
-          <div class="answer">
-            <p>Lorem ipsum...</p>
+          <div class="question" id="section1" onclick="toggleAnswer()">How much does it cost? 
+            <div class="plus-button"> + </div> 
           </div>
+          <div class="answer"> Lorem ipsum... </div>
 
-          <div class="question" id="section2">Section 2</div>
-          <div class="answer">
-            <p>Lorem ipsum...</p>
+          <div class="question" id="section2" onclick="toggleAnswer()">How old should my dog should be? 
+            <div class="plus-button"> + </div> 
           </div>
+          <div class="answer"> Lorem ipsum... </div>
+
+          <div class="question" id="section3" onclick="toggleAnswer()">How long time to find a dog buddy? 
+            <div class="plus-button"> + </div> 
+          </div>
+          <div class="answer"> Lorem ipsum... </div>
+        
         </div>
       </section>
 
