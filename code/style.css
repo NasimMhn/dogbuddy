@@ -69,6 +69,22 @@ video {
     justify-content: center    
 }
 
+.apple-btn {
+    height: 45px;
+    width: 134px;
+    background-color: #123C69;
+    color: #EEE2DC;
+    font-family: "Montserrat";
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+.apple-btn img {
+    height: 24px;
+    fill: #EEE2DC;
+}
+
 container {
     display: grid;
     grid-template-columns: repeat(2, 1fr );
@@ -85,7 +101,7 @@ container {
   
     
 }
-.signup-div{
+.stylebox-div{
     padding: 5px 0px 30px 0px;
     margin: 20px auto 20px auto;
     height: 490px;
@@ -102,12 +118,12 @@ input[type="text"], input[type="email"] {
     margin: auto;
     display: block;
     width: 60%;
-
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 1rem;
     font-size: 16px;
 }
+
 
 input[type="text"]:hover, input[type="email"]:hover {
     border:rgb(255, 253, 253) 1px solid;
@@ -157,6 +173,7 @@ form div {
     border: 1px #EEE2DC solid;
     font-weight: bold;
     padding-left: 12px;
+    cursor: pointer;
 }
 
 .question .plus-button {
@@ -177,9 +194,28 @@ form div {
 
 .open + .answer {
     display: block;
+    -webkit-animation-name: open-answer; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: open-answer;
+    animation-duration: 0.8s;
+    overflow: hidden;
+    
 }
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes open-answer {
+    from {height: 0px;}
+    to {height: 50px;}
+  }
+  
+  /* Standard syntax */
+  @keyframes open-answer {
+    from {height: 0px;}
+    to {height: 50px;}
+  }
+
 /*** Media queries ***/
+
 @media (max-width:660px) {
     container {
         grid-template-columns: unset;

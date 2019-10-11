@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <title>Dogbuddy</title>
-    
     <link href="style.css" rel="stylesheet" >
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
@@ -28,6 +26,9 @@
         <div class="content">
           <h1> DogBuddy</h1>
           <h3> - Let your dog meet new and interesting dogs nearby- </p>
+          <button class="apple-btn"> 
+            Download 
+          </button>
         </div>
 
     </header>
@@ -35,7 +36,7 @@
     <container>
       <!-- Signup section -->
       <section class="signup-section">
-        <div class="signup-div">
+        <div class="stylebox-div">
           <h2>Sign up</h2>
        
           <form action="http://httpbin.org/anything" method="POST">
@@ -64,24 +65,28 @@
        <!-- Accordion section -->
       <section class="accordion-section">
        
-        <div class="signup-div">
+        <div class="stylebox-div">
           <h2>FAQ</h2>
 
-          <div class="question" id="section1" onclick="toggleAnswer()">How much does it cost? 
+          <div class="question" id="section1" onclick="toggleAnswer()"> How much does it cost? 
             <div class="plus-button"> + </div> 
           </div>
-          <div class="answer"> Lorem ipsum... </div>
+          <div class="answer"> Its free </div>
 
-          <div class="question" id="section2" onclick="toggleAnswer()">How old should my dog should be? 
+          <div class="question" id="section2" onclick="toggleAnswer()"> How old should my dog be? 
             <div class="plus-button"> + </div> 
           </div>
-          <div class="answer"> Lorem ipsum... </div>
+          <div class="answer">There is no limitation </div>
 
-          <div class="question" id="section3" onclick="toggleAnswer()">How long time to find a dog buddy? 
+          <div class="question" id="section3" onclick="toggleAnswer()"> Is DogBuddy right for my dog? 
             <div class="plus-button"> + </div> 
           </div>
           <div class="answer"> Lorem ipsum... </div>
-        
+          
+          <div class="question" id="section4" onclick="toggleAnswer()"> How long time to find a match?
+              <div class="plus-button"> + </div> 
+          </div>
+          <div class="answer"> Lorem ipsum... </div>
         </div>
       </section>
 
