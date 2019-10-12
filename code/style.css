@@ -68,7 +68,7 @@ video {
     background-color:#EBC7B7;
     color:   #123C69;
     font-family: "Montserrat";
-    font-size: 18px;
+    font-size: 17px;
     border-radius: 10px;
     font-weight: bold;
     position: relative;
@@ -76,6 +76,7 @@ video {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    padding: 0px;
         
     
 }
@@ -87,7 +88,7 @@ video {
 .apple-btn img {
     height: 24px;
     position: relative;
-    top:5px;
+    top:4px;
 }
 
 container {
