@@ -73,6 +73,10 @@ video {
     font-weight: bold;
     position: relative;
     top: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+        
     
 }
 
@@ -138,7 +142,6 @@ input[type="submit"] {
     border:rgb(46, 0, 8) 1px solid;
     border-radius: 15px;
     color: #EEE2DC;
-    
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
