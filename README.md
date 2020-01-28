@@ -1,4 +1,4 @@
-# Project 3 @ Technigo Bootcamp - Build a Business website
+# A Business website
 
 
 This week was all about learning how the internet works and also how to use HTML forms to send requests. An accordion is also being used in this project, which including a touch of JavaScript.  
